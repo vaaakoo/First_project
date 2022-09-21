@@ -1,0 +1,430 @@
+/* main page  */ 
+
+body {
+      
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #cccccc;
+      font-family: serif;
+  }
+  
+  
+  .forca {
+      font-size: 70px;
+      font-family: serif;
+      color: #7e7e81;
+      font-style: bold;
+      border-bottom: solid;
+  }
+
+
+/* navbar for all page */ 
+    .navbar {
+      border-radius: 10%;
+      margin-bottom: 0;
+      margin: 20px;
+      padding: 20px;
+      font-size: 25px;
+      font-family: serif;
+      color: red;
+    }
+     /*logo style*/   
+    .logo {
+        padding: 10px 20px 70px 10px;
+    }
+    .logo:hover {
+        opacity: 0.5;
+    }
+    
+    /* Footer styles and structures */
+    footer {
+      background-color: black;
+      background-image: url("https://logos-world.net/wp-content/uploads/2020/11/Milan-Logo-700x394.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 30% 60%;
+      padding: 80px;
+      margin-top: 30px;
+      color: white;
+ 
+    }
+    
+    footer.container {
+        text-align: right;
+    }
+   
+   /* Slidebar for main page */ 
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      max-height:670px;
+      padding: 20px;
+      border-radius: 30px;
+      
+  }
+     .item {
+      color: black;
+      font-style: bold;
+  }
+  
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  .carousel-caption .text-right {
+    transition: opacity 1s;
+}
+
+.carousel-caption .text-right:hover {
+    opacity: 0.5;
+}
+    /* main page last position buying option*/ 
+  .buy-bt {
+      margin: 5px;
+      transition: opacity 1s;
+  }
+  
+  .buy-bt:hover {
+      opacity: 0.5;
+  }
+  .carousel-caption .item {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      float: left;
+  } 
+  
+ 
+   .buy-img {
+       display: block;
+       width: 100%;
+       height: auto;
+       cursor: pointer;
+   }
+   
+   
+   .buy-img {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        height: 100%;
+        overflow: hidden; 
+        background: white;
+        animation: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running fade-in; /* animation for picture*/
+   
+   }
+   
+   .buy-img:hover {
+       transform: scale(1.2);
+   }
+  
+    .buy-img {
+       border-radius: 20px;
+       transform: scale(1);
+       transition: 0.3s ease-in-out; 
+       
+   }
+
+    .buy-img:hover {
+        transform: scale(0.8);
+    }
+    
+    .next-previous a {
+        
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+    }
+    .next-previous a:hover {
+      background-color: #ddd;
+      color: black;
+}
+    
+    /*news feed*/
+    
+.torino {
+    background-color: white;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+    /*news feed*/
+    
+/*team all*/  
+.squad {
+    width: 50%;
+    transition: width 0.5s;
+}
+.squad:hover  {
+    width: 60%;
+    
+}
+
+/*team all*/
+
+
+
+/* login */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.click-bt .button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 25px 40px;
+  margin: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.click-bt .button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.click-bt .container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+/* login */
+
+/*register*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.button1 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.button1:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn1 {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn1, .signupbtn1 {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.click-bt1 .container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal1-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close1 {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn1, .signupbtn1 {
+     width: 100%;
+  }
+}
+
+
+
+/*register*/
+
+
+/*contact*/
+
+.contact-th {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.26px;
+    color: rgb(201, 36, 13);
+    border-bottom: 4px solid rgb(201, 36, 13);
+    padding: 5px;
+    
+}
